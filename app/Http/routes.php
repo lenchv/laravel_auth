@@ -18,3 +18,10 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::resource("users", "UserController");
+Route::resource("books", "BookController");
+Route::resource("userbooks", "UserBooksController");
+
+Route::get("auth/github", "SocialAuthController@redirectToProvider");
+Route::get("auth/github/callback", "SocialAuthController@handleProviderCallback");

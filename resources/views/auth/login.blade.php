@@ -58,6 +58,7 @@
                             </div>
                         </div>
                     </form>
+                    <a href="/auth/github">auth github</a>
                 </div>
             </div>
         </div>

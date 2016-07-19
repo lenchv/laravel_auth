@@ -35,4 +35,10 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'github' => [
+        'client_id' => env("GITHUB_ID"),
+        'client_secret' => env("GITHUB_SECRET"),
+        'redirect' => 'http://crud.local:8000/auth/github/callback',
+    ],
+
 ];
